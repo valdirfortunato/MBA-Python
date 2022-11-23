@@ -1,0 +1,31 @@
+##ARQUIVO DE CONFIGURAÇÃO YAML
+
+#Informação que deseja pesquisar nos sites IEEE e Science Direct
+search: NoSQL
+
+#Tipos de dados que deseja salvar o arquivo. Obs.: As opções disponíveis são csv, json e yaml.
+type_save: json, csv, yaml, parquet
+
+#Filtros para serem aplicados na exportação dos arquivos
+filter_title:       
+filter_year: 2021
+
+#Caminhos dos arquivos de origem
+jcs_origem: G:\Meu Drive\MBA - Data Engeneering\Python for Data Engineer\Trabalho-part3\Source\jcs_2020.csv
+scimago_origem: G:\Meu Drive\MBA - Data Engeneering\Python for Data Engineer\Trabalho-part3\Source\scimagojr 2020.csv
+acm_origem: G:\Meu Drive\MBA - Data Engeneering\Python for Data Engineer\Trabalho-part3\Source\ACM.bib
+ieee_origem: G:\Meu Drive\MBA - Data Engeneering\Python for Data Engineer\Trabalho-part3\Source\IEE.bib
+science_direct_origem: G:\Meu Drive\MBA - Data Engeneering\Python for Data Engineer\Trabalho-part3\Source\ScienceDirect.bib
+
+#Caminhos dos arquivos de destino
+csv_dest: C:\Users\valdi\Documents\Python\ExPart3\Export\export_final.csv
+json_dest: C:\Users\valdi\Documents\Python\ExPart3\Export\export_final.json
+yaml_dest: C:\Users\valdi\Documents\Python\ExPart3\Export\export_final.yaml
+parquet_gzip_dest: C:\Users\valdi\Documents\Python\ExPart3\Export\export_final.gzip
+parquet_snappy_dest: C:\Users\valdi\Documents\Python\ExPart3\Export\export_final.snappy
+
+#String de conexão Banco de dados
+server: localhost
+database: DB_TestePython
+username: usr_apppython
+password: Python123
